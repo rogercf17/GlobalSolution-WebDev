@@ -1,15 +1,11 @@
-// alert("Bem vindos");
 document.getElementById('form-contato').addEventListener('submit', function(infosDoEvento) {
     infosDoEvento.preventDefault();
-
     const nome = document.querySelector("#nome").value.trim();    
     const email = document.querySelector("#email").value.trim();    
     const telefone = document.querySelector("#telefone").value.trim();
     const mensagem = document.querySelector("#mensagem").value.trim();
-
     let validacao = true;
     let mensagemErro = [];
-
     if(!nome || !email || !telefone || !mensagem) {
         mensagemErro.push("Todos os campos devem ser preenchidos.");
         validacao = false;
