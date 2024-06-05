@@ -1,4 +1,3 @@
-// alert("Bem vindos");
 
 // MOSTRAR E ESCONDER O FORMULÁRIO
 var btnForm = document.getElementById("botao-form");
@@ -36,7 +35,6 @@ function criarComentario() {
         nome: nomeUsuario.value,
         comentario: comentarioUsuario.value
     }
-
     arrayComentarios.unshift(novoComentario);
     nomeUsuario.value = "";
     comentarioUsuario.value = "";
@@ -51,7 +49,6 @@ function mostraComentariosNaTela() {
     if (localStorage.Arr){             
         arrayComentarios = JSON.parse(localStorage.getItem('Arr')); 
     }
-
     arrayComentarios.forEach(
         comentario => {
             let comentarioNovo = document.createElement('li');
