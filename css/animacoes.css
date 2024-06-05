@@ -1,0 +1,19 @@
+.menu-nav-ul li a:hover {
+    color: #0D87DE;
+    text-decoration: underline;
+}
+
+.section-conteudo img:hover {
+    transform: scale(1.05);
+    border-radius: 50%;
+}
+
+.caixa-botao a button:hover {
+    border: transparent solid 1px;
+    color: #c7c7cc;
+    background-color: #0D87DE;
+}
+
+#form-contato button:hover {
+    width: 20%;
+}
