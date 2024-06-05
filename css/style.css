@@ -277,17 +277,20 @@ p .titulo {
 }
 
 /* Comentarios.html */
-#form-comentarios {
+.content-comentario {
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 95%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    height: auto;
-}
+    gap: 20px;
 
-.botao-form {
+}
+#botao-form {
+    display: block;
     align-self: center;
     width: 30%;
     height: 4rem;
@@ -300,17 +303,11 @@ p .titulo {
     transition: all 0.7s;
 }
 
-.botao-form:hover {
-    font-size: 18px;
-    height: 4.5rem;
-}
-
-#form-comentarios form {
+#form-comentario {
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
     display: none;
-    flex-direction: column;
     width: 40%;
     height: auto;
     gap: 5px;
@@ -318,7 +315,7 @@ p .titulo {
     text-align: left;
 }
 
-#form-comentarios form input[type=text] {
+#form-comentario input[type=text] {
     align-self: center;
     width: 95%;
     height: 1.5rem;
@@ -326,16 +323,60 @@ p .titulo {
     border-radius: 7px;
 }
 
-#form-comentarios form label {
+#form-comentario label {
     font-weight: 700;
 }
 
-#form-comentarios form textarea {
+#form-comentario textarea {
     align-self: center;
     width: 95%;
     height: 5rem;
     resize: none;
     border: #c7c7c7 solid 1px;
     border-radius: 7px;
+}
+
+#form-comentario .botao-enviar {
+    align-self: center;
+    width: 15%;
+    height: 1.5rem;
+    border: #c7c7c7 solid 1px;
+    border-radius: 28px;
+    background-color: #1308E0;
+    color: #c7c7c7;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.7s;
+}
+
+#carrosel-comentarios li {
+    list-style-type: none;
+    background: #37355E;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    padding: 1.2rem;
+    color: #c7c7c7;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#carrosel-comentarios li button {
+    align-self: center;
+    background-color: #0D87DE;
+    border: transparent solid 1px;
+    border-radius: 28px;
+    color: #FFFFFF;
+    width: 50%;
+    height: 30px;
+    cursor: pointer;
+}
+
+#carrosel-comentarios li img {
+    width: 20px;
+    height: 20px;
 }
 
