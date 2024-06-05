@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// alert("Bem vindos");
-=======
 document.getElementById('form-contato').addEventListener('submit', function(infosDoEvento) {
     infosDoEvento.preventDefault();
     const nome = document.querySelector("#nome").value.trim();    
@@ -37,4 +34,3 @@ document.getElementById('form-contato').addEventListener('submit', function(info
         document.querySelector("#mensagem").value = "";
     }
 });
->>>>>>> contato
