@@ -55,12 +55,14 @@ function mostraComentariosNaTela() {
                 <h2><img src="../images/icones/user-solid.svg" alt="icone de user"> - ${comentario.nome}</h2>
                 <br>
                 <p>${comentario.comentario}</p>
+                <br>
+                <button onclick="apagarComentario(${arrayComentarios.indexOf(comentario)})"> Apagar </button>
             `;
             listaComentarios.append(comentarioNovo);
         }
     )
 }
-function apagarFilme(id){
+function apagarComentario(id){
     arrayComentarios.splice(id, 1);
     localStorage.Arr = JSON.stringify(arrayComentarios);  
     mostraComentariosNaTela();

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // EFEITO DE DIGITAÇÃO DE TEXTO
 new Typed('#titulo-digitado', {
-    strings: ["Bem-vindos, nós somos a Blue GR"],
+    strings: ["OceanGuard - Sistema de Monitoramento de Qualidade da Água"],
     typeSpeed: 50,
     loop: false
 });

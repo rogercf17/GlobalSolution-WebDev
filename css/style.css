@@ -57,21 +57,6 @@ body {
     font-weight: 700;
 }
 
-#hero {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    align-items: center;
-    color: #0D87DE;
-    text-align: center;
-    line-height: 1.3;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
 .hero-content2 {
     display: flex;
     flex-direction: row;
@@ -97,20 +82,36 @@ body {
     transition: all 1s;
 }
 
+#hero {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    color: #0D87DE;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
 .hero-content {
     max-width: 600px;
     letter-spacing: 2px;
 }
 
-.hero-content p {
-    color: #0D87DE; 
-}
-
 .hero-content strong{
-    color: #1308E0;
-    text-shadow: #37355E 1px 1px 9px;
+    text-shadow: #37355E 1px 1px 3px;
 }
 
+.img-logo {
+    width: 20rem;
+    height: 18rem;
+    margin: 20px 0px;
+    transform: scale(1.15,1);
+}
 .img-logo {
     width: 20rem;
     height: 18rem;
@@ -134,10 +135,11 @@ section:not(#hero) {
 }
 
 .section-conteudo {
+    width: 100%;
+    height: 50vh;
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,19 +147,28 @@ section:not(#hero) {
     gap: 40px;
 }
 
-.section-conteudo img {
-    width: 28rem;
-    height: 20rem;
+.section-conteudo .img-section {
+    width: 40vw;
+    height: 40vh;
     border-radius: 8px;
     transition: all 0.3s;
+    padding: 1rem;
 }
 
 .section-conteudo div {
+    padding: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
+    align-items: center;
     position: relative;
-    bottom: 5rem;
+    bottom: 0;
+    width: 70%;
+    line-height: 1.3;
+}
+
+.section-conteudo div .p-introducao {
+    text-align: justify;
 }
 
 .section-conteudo div p {
@@ -166,14 +177,21 @@ section:not(#hero) {
     font-weight: 700;
     filter: opacity(.75);
     text-align: justify;
+    width: 95%;
+    text-align: left;
 }
 
-p .titulo {
+.section-conteudo div .titulo {
     color: #0D87DE;
     font-size: 20px;
-    width: 80%;
 }
 
+.section-conteudo div ul{
+    font-size: 14px;
+    font-weight: 700;
+    width: 88%;
+    list-style-type: circle;
+}
 #rodape {
     width: 100%;
     height: 200px;
