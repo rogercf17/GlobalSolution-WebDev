@@ -23,7 +23,7 @@ body {
     background-color: #1308E0;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 100;
 }
 
 .menu-nav {
@@ -60,7 +60,6 @@ body {
 #hero {
     width: 100%;
     height: auto;
-    background: url('images/hero-background.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
